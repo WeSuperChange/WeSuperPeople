@@ -8,7 +8,7 @@
 			"args": [
 				"--watch",
 				"--no-source-map",
-				"./src/assets/scss/:./src/assets/css/"
+				"./app/src/assets/scss/:./app/src/assets/css/"
 			],
             "problemMatcher": [],
             "group": {
