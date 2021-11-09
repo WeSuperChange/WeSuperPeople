@@ -1,7 +1,7 @@
 // import logo from "./logo.svg";
 import "./App.css";
 import {
-    BrowserRouter as Router, Switch, Route
+    BrowserRouter as Router, Routes, Route
 } from "react-router-dom";
 import Home from "./pages/Home";
 import { Login } from "./pages/Login";
@@ -18,52 +18,19 @@ import { HomePoll } from "./pages/HomePoll";
 function App() {
     return (
         <Router>
-            <Switch>
-                <Route path="/" exact>
-                    <Home />
-                </Route>
-
-                <Route path="/login">
-                    <Login />
-                </Route>
-
-                <Route path="/letsgo">
-                    <Letsgo />
-                </Route>
-
-                <Route path="/contact" exact>
-                    <Contact />
-                </Route>
-
-                <Route path="/contact_thanks">
-                    <ContactThanks />
-                </Route>
-
-                <Route path="/home_poll">
-                    <HomePoll />
-                </Route>
-
-                <Route path="/new_poll">
-                    <NewPoll />
-                </Route>
-
-                <Route path="/own_poll">
-                    <OwnPoll />
-                </Route>
-
-                <Route path="/question">
-                    <Question />
-                </Route>
-
-                <Route path="/poll_thanks">
-                    <PollThanks />
-                </Route>
-
-                <Route path="/Results">
-                    <Results />
-                </Route>
-
-            </Switch>
+            <Routes>
+                <Route path="/" element={<Home />} exact />
+                <Route path="/login" element={<Login />} />
+                <Route path="/letsgo" element={<Letsgo />} />
+                <Route path="/contact" element={<Contact />} exact />
+                <Route path="/contact_thanks" element={<ContactThanks />} />
+                <Route path="/home_poll" element={<HomePoll />} />
+                <Route path="/new_poll" element={<NewPoll />} />
+                <Route path="/own_poll" element={<OwnPoll />} />
+                <Route path="/question" element={<Question />} />
+                <Route path="/poll_thanks" element={<PollThanks />} />
+                <Route path="/Results" element={<Results />} />
+            </Routes>
         </Router>
     );
 }
