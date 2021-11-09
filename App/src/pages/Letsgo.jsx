@@ -1,3 +1,9 @@
-import React from "react";
+import React from 'react'
 
-export default Letsgo;
+export const Letsgo = () => {
+    return (
+        <div>
+            <h1>LOS GEHTS</h1>
+        </div>
+    )
+}

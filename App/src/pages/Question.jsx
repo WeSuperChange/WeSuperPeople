@@ -1,7 +1,7 @@
 import React from "react";
 import QuestionCard from "../components/QuestionCard";
 
-const Home = () => {
+const Question = () => {
     return (
         <div>
             <QuestionCard />

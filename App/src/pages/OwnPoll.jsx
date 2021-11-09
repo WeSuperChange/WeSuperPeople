@@ -1,3 +1,9 @@
-import React from "react";
+import React from 'react'
 
-export default OwnPoll;
+export const OwnPoll = () => {
+    return (
+        <div>
+            <h1>OwnPoll</h1>
+        </div>
+    )
+}

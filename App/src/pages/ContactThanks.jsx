@@ -1,3 +1,9 @@
-import React from "react";
+import React from 'react'
 
-export default ContactThanks;
+export default function ContactThanks() {
+    return (
+        <div>
+            <h1>DANKE</h1>
+        </div>
+    )
+}

@@ -1,3 +1,9 @@
-import React from "react";
+import React from 'react'
 
-export default HomePoll;
+export const HomePoll = () => {
+    return (
+        <div>
+            <h1>test</h1>
+        </div>
+    )
+}

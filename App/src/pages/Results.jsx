@@ -3,7 +3,8 @@ import React from "react";
 const Results = () => {
     return (
         <div>
-            <Main />
+            {/* <Main /> */}
+            <h1>Test</h1>
         </div>
     );
 };
